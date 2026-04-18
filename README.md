@@ -1,4 +1,4 @@
-# Kawaii Weather App
+# Cat-Theme Weather App
 
 A modern, aesthetic, and responsive weather website with a cohesive "kawaii cat" theme. This app provides real-time weather data and a 5-day forecast, built with HTML, CSS, and Vanilla JavaScript. 
 
