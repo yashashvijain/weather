@@ -112,6 +112,12 @@ function updateUI(weather, forecast, extra) {
     hideAllCards();
     weatherCard.classList.add('active');
 
+    // Remove the floating cat from the left corner once the weather page loads
+    const floatingCat = document.querySelector('.floating-cat-video');
+    if (floatingCat) {
+        floatingCat.style.display = 'none';
+    }
+
     const condition = weather.weather[0].main;
     const isNight = isItNight(weather.sys.sunrise, weather.sys.sunset, weather.dt);
 
