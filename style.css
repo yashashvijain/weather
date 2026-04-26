@@ -440,10 +440,11 @@ body.weather-night .text-light { color: #cbd5e1; }
 /* Floating Cat Video */
 .floating-cat-video {
     position: fixed;
-    bottom: -15px;
-    left: -20px;
-    width: 380px;
-    height: 380px;
+    /* We pull it slightly out of frame so any edge padding in the video is hidden, making the peek seamless */
+    bottom: -8px;
+    left: -12px;
+    width: 220px;
+    height: 220px;
     z-index: 1000;
     pointer-events: none;
     mix-blend-mode: multiply;
@@ -468,6 +469,14 @@ body.weather-night .floating-cat-video {
 
 /* Desktop Laptop View (Reference Design) */
 @media (min-width: 900px) {
+    /* Make the floating cat video large on big screens */
+    .floating-cat-video {
+        bottom: -15px;
+        left: -20px;
+        width: 380px;
+        height: 380px;
+    }
+
     .app-container {
         max-width: 1000px;
         padding: 40px;
